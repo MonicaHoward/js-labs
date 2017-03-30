@@ -8,6 +8,7 @@ describe('Strings are like arrays so', function() {
 
     var length;
 
+
     chai.assert.equal(length, 54);
   });
 
@@ -16,6 +17,8 @@ describe('Strings are like arrays so', function() {
 
     var theVowels = '';
 
+
+  }
     chai.assert.equal(theVowels, 'aoeeieaoiiiaei');
   });
 
@@ -25,7 +28,7 @@ describe('Strings are like arrays so', function() {
 
       var str = 'Jack smote the wicked dragon mightily with a wet fish.'
 
-      var indexOfW;
+      var indexOfW = str.indexOf('w');
 
       chai.assert.equal(indexOfW, 15);
     });
@@ -43,7 +46,7 @@ describe('Strings are like arrays so', function() {
 
       var str = 'Jack smote the wicked dragon mightily with a wet fish.'
 
-      var indexOfZ;
+      var indexOfZ = str.indexof('z');
 
       chai.assert.equal(indexOfZ, -1);
     });
@@ -57,7 +60,7 @@ describe('Strings', function() {
   factoid('can be converted to uppercase.', function() {
     var str = 'hello';
 
-    var result;
+    var result = str.toUpperCase;
 
     chai.assert.equal(result, 'HELLO');
   });
@@ -65,7 +68,7 @@ describe('Strings', function() {
   factoid('can be converted to lowercase.', function() {
     var str = 'HELLO';
 
-    var result;
+    var result = str.toLowerCase;
 
     chai.assert.equal(result, 'hello');
   });
@@ -73,7 +76,8 @@ describe('Strings', function() {
   factoid('can be split based on a delimiter.', function() {
     var str = 'Bob,Smith,54,2304 Main St,Dallas,TX,76543';
 
-    var city;
+    var arr = str.split (',');
+    var city = arr[4];
 
     chai.assert.equal(city, 'Dallas');
   });
@@ -82,7 +86,7 @@ describe('Strings', function() {
     var str = 'Jack smote the wicked dragon mightily with a wet fish.';
 
     //`substr` takes two arguments, the index to start with the length to select.
-    var sub;
+    var sub = str. substr(15, 6);
 
     chai.assert.equal(sub, 'wicked');
   });
@@ -91,7 +95,7 @@ describe('Strings', function() {
     var str = 'Jack smote the wicked dragon mightily with a wet fish.';
 
     //`substring` takes two arguments, the index to start and the index to end the selection.
-    var sub;
+    var sub = str.stubstr(15,21);
 
     chai.assert.equal(sub, 'wicked');
   });

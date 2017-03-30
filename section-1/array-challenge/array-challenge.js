@@ -1,7 +1,24 @@
 function arrayReverser(arr) {
+  var output = [];
+
+  //Do magic here
+  for (var i = arr.length - 1; i > -1; i--) {
+    output.push(arr[i]);
+  }
+
+  return output;
 }
 
+
+
+
 function sumArrayOfNumbers(arr) {
+  var sum = 0;
+  var sumArrayOfNumbers =
+
+  for (var i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
 }
 
 

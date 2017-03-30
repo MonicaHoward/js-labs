@@ -6,6 +6,9 @@ describe('You can use for loops', function() {
 
     var sum = 0;
     //Use a for loop to add 2 to this number 5 times.
+    for (var i = 0; i < 5; i++){
+      sum += 2;
+    }
 
     chai.assert.equal(sum, 10);
   });
@@ -15,7 +18,9 @@ describe('You can use for loops', function() {
 
     var sum = 0;
     //Use a for loop to sum the values.
-
+    for (var i=0; i < 4; i++) {
+      sum += arrayOfNumbers[i];
+    }
     chai.assert.equal(sum, 56);
   });
 
@@ -24,8 +29,10 @@ describe('You can use for loops', function() {
 
     var sum = 0;
     //Use a for loop to sum the values then computer the average.
-
-    var average;
+    for ( var i = 0; i < arrayOfNumbers.length; i++) {
+      sum += arrayOfNumbers[i];
+    }
+    var average = sum / arrayOfNumbers.length;
 
     chai.assert.equal(average, 14);
   });
@@ -34,6 +41,17 @@ describe('You can use for loops', function() {
     var arrayOfNumbers = [7, 12, 33, 4];
 
     var sumOfOdds = 0;
+    for (var i = 0; i < arrayOfNumbers.length; i++){
+
+      if (arrayOfNumbers[i] %  2  ===  1) {
+        sumOfOdds += arrayOfNumbers[i];
+      }
+
+    }
+
+
+
+
 
     chai.assert.equal(sumOfOdds, 40);
   });
@@ -53,6 +71,13 @@ describe('You can use for loops', function() {
     //In this case, loop over the names to create a new array of greetings, "Hello Fred!", "Hello Bob!", and "Hello Beowulf!"
     var greetings = [];
 
+    for (var i = 0 ; i < names.length; i++) {
+
+      var greeting = 'Hello  ' + names[i] + '!';
+      name + ' ' + greeting;
+      greeting.push(greeting);
+    }
+
     chai.assert.equal(greetings[0], 'Hello Fred!');
     chai.assert.equal(greetings[1], 'Hello Bob!');
     chai.assert.equal(greetings[2], 'Hello Beowulf!');
@@ -69,6 +94,14 @@ describe('You can use while loops', function() {
 
     var sum = 0;
     //Use a while loop to sum the values.
+    var i = 0;
+    while (i < arrayOfNumbers.length) {
+
+      sum += arrayOfNumbers[i];
+      i++;
+    }
+
+    }
 
     chai.assert.equal(sum, 56);
   });
@@ -79,8 +112,17 @@ describe('You can use while loops', function() {
     var yourBudget = 100;
 
 
+
+
     //Use a while loop to buy things until you can't buy things anymore.
 
+    var i = 0
+
+    while (moneySpent + nextItem < yourBudget) {
+  moneySpent =+ prices[]
+  i++;
+
+}
     chai.assert.equal(moneySpent, 92.76);
   });
 
