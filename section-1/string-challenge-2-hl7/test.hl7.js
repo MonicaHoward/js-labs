@@ -26,6 +26,15 @@ describe('HL7', function() {
     //TODO: Write a test for the birth day.
   });
 
+
+
+
+
+
+
+
+
+
   describe('MSH parser', function() {
 
     //You might find this page useful: https://corepointhealth.com/resource-center/hl7-resources/hl7-msh-message-header
