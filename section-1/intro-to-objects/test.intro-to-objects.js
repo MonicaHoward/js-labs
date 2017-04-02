@@ -6,7 +6,10 @@ describe('An object can be created', function() {
 
     //This person needs a name attribute of 'George Washington' and a gender attribute of 'Male'.
     //Use object literal syntax.
-    var person = {};
+    var person = {
+      name: 'George Washington',
+      gender: 'Male',
+    };
 
     chai.assert.equal(person.name, 'George Washington');
     chai.assert.equal(person.gender, 'Male');
@@ -17,8 +20,8 @@ describe('An object can be created', function() {
     //This person needs a name attribute of 'George Washington' and a gender attribute of 'Male'.
     //Use dot syntax to assign the attributes.
     var person = {};
-    // person.name = 'George Washington';
-    // person.gender = 'Male';
+     person.name = 'George Washington';
+     person.gender = 'Male';
 
     chai.assert.equal(person.name, 'George Washington');
     chai.assert.equal(person.gender, 'Male');
@@ -29,9 +32,9 @@ describe('An object can be created', function() {
     //This person needs a name attribute of 'George Washington' and a gender attribute of 'Male'.
     //Use string indexing to assign the attributes.
     var person = {};
-    // person['name'] = 'George Washington';
-    // person['gender'] = 'Male';
-    // person['favorite food'] = 'pizza';
+     person['name'] = 'George Washington';
+     person['gender'] = 'Male';
+     person['favorite food'] = 'pizza';
 
     chai.assert.equal(person.name, 'George Washington');
     chai.assert.equal(person.gender, 'Male');
@@ -51,6 +54,9 @@ describe('An object', function() {
 
     //TODO: Get a property called "pantSize" from the person object and put it in a variable with the same name.
 
+    var pantSize;
+
+
     chai.assert.equal(pantSize, undefined);
   });
 
@@ -65,7 +71,12 @@ describe('An object', function() {
     var values = [];
 
     //Loop over the person's attributes using a `for...in` loop and add all key names to the attributes array, and values to the values array.
-
+    var output = ' ';
+    for (var i = 0; i < person.length; i++) {
+      output = names[i]; {
+        return output;
+      }
+    }
 
 
     //However, the properties won't necessarily be in the order that they are listed in the array literal above. Object values aren't stored in order like array values are.
